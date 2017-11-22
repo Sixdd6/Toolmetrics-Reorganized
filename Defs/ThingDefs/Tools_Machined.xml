@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Machined -->
+    <thingDef Name="BaseTool_Machined" ParentName="BaseTool" Abstract="True">
+      <recipeMaker>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <recipeUsers>
+          <li>TableMachining</li>
+        </recipeUsers>
+        <stuffCategories>
+          <li>Metallic</li>
+        </stuffCategories>
+        <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        <defaultIngredientFilter>
+          <categories>
+            <li>Root</li>
+          </categories>
+          <exceptedThingDefs>
+            <li>Silver</li>
+            <li>Gold</li>
+          </exceptedThingDefs>
+        </defaultIngredientFilter>
+      </recipeMaker>
+      <equippedAngleOffset>-65</equippedAngleOffset>
+      <techLevel>Industrial</techLevel>
+    </thingDef>
+
+    <!-- ============================Skill Saw================================== -->
+      <thingDef ParentName="BaseTool_Machined">
+        <defName>Tool_Skill_Saw</defName>
+        <label>skill saw</label>
+        <description>Plant Work Speed +75%\nConstruction Speed +20%\nPlant Harvest Yield -1\n\nCuts through wood like butter, cuts through butter like... well, better not try that.</description>
+        <graphicData>
+          <texPath>Tools/Skill_Saw</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>15000</WorkToMake>
+          <Mass>8</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <PlantWorkSpeed>0.75</PlantWorkSpeed>
+          <ConstructionSpeed>0.2</ConstructionSpeed>
+          <PlantHarvestYield>-1</PlantHarvestYield>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <costStuffCount>60</costStuffCount>
+          <costList>
+            <Component>2</Component>
+          </costList>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>17</power>
+            <cooldownTime>2.5</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>34</power>
+            <cooldownTime>5</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Brick Saw================================== -->
+      <thingDef ParentName="BaseTool_Machined">
+        <defName>Tool_Brick_Saw</defName>
+        <label>brick saw</label>
+        <description>Stonecutting Speed +50%\n\nWhy chisel away slowly when you can slice and dice your way to perfect stone tiles?</description>
+        <graphicData>
+          <texPath>Tools/Brick_Saw</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>15000</WorkToMake>
+          <Mass>8</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <StonecuttingSpeed>0.5</StonecuttingSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <costStuffCount>60</costStuffCount>
+          <costList>
+            <Component>2</Component>
+          </costList>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>17</power>
+            <cooldownTime>2.2</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>34</power>
+            <cooldownTime>4.4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Power Drill================================== -->
+      <thingDef ParentName="BaseTool_Machined">
+        <defName>Tool_Power_Drill</defName>
+        <label>power drill</label>
+        <description>Construction Speed +50%\nConstruction Success Chance +10%\n\nThe best and fastest way to build things is just to put a lot of holes in it.</description>
+        <graphicData>
+          <texPath>Tools/Power_Drill</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>15000</WorkToMake>
+          <Mass>8</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <ConstructionSpeed>0.5</ConstructionSpeed>
+          <ConstructSuccessChance>0.1</ConstructSuccessChance>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <costStuffCount>60</costStuffCount>
+          <costList>
+            <Component>2</Component>
+          </costList>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>13</power>
+            <cooldownTime>4.8</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>26</power>
+            <cooldownTime>4.8</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Jackhammer================================== -->
+      <thingDef ParentName="BaseTool_Machined">
+        <defName>Tool_Jackhammer</defName>
+        <label>jackhammer</label>
+        <description>Mining Speed +50%\n\nLoud, obnoxious, and extremly good at breaking rocks apart.</description>
+        <graphicData>
+          <texPath>Tools/Jackhammer</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>20000</WorkToMake>
+          <Mass>20</Mass>
+          <MeleeWeapon_DamageAmount>26</MeleeWeapon_DamageAmount>
+          <MeleeWeapon_Cooldown>4.8</MeleeWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+          <MiningSpeed>0.5</MiningSpeed>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <costStuffCount>100</costStuffCount>
+          <costList>
+            <Component>1</Component>
+          </costList>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>13</power>
+            <cooldownTime>4.8</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>26</power>
+            <cooldownTime>4.8</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+</Defs>

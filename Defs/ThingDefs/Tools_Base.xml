@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <thingDef Name="BaseTool" Abstract="True">
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <equipmentType>Primary</equipmentType>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <selectable>True</selectable>
+    <graphicData>
+      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+    </graphicData>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+      <SellPriceFactor>0.25</SellPriceFactor>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <canBeSpawningInventory>true</canBeSpawningInventory>
+    <tradeability>Sellable</tradeability>
+    <weaponTags>
+      <li>Melee</li>
+      <li>Tool</li>
+    </weaponTags>
+    <thingCategories>
+      <li>Tools</li>
+    </thingCategories>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </thingDef>
+
+  <!-- Stats
+  Tech Levels:
+    Neolithic
+    Medieval
+    Industrial
+    Spacer
+
+  Work Amounts:
+    Hats: 5000
+    Power Helmet: 40000
+    Clothes: 6500
+    Duster: 20000
+    Armor: 170000
+    Guns: 15000-30000
+    Spacer Gun: 100000
+    Melee Basic: 500
+    Forging: 10000
+    Advanced Melee: 20000
+    Bows: 10000-18000
+
+  Things to add maybe
+    <techLevel>Neolithic</techLevel>
+
+    <costList>
+      <Cloth>60</Cloth>
+      <Medicine>2</Medicine>
+    </costList>
+
+    <recipeMaker>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+
+    <statBases>
+      <MeleeWeapon_DamageAmount>6</MeleeWeapon_DamageAmount>
+      <MeleeWeapon_Cooldown>2</MeleeWeapon_Cooldown>
+    </statBases>
+
+    <MarketValue>300</MarketValue>
+  -->
+
+</Defs>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Crafted -->
+    <thingDef Name="BaseTool_Crafted" ParentName="BaseTool" Abstract="True">
+      <recipeMaker>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <recipeUsers>
+          <li>CraftingSpot</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      </recipeMaker>
+      <techLevel>Neolithic</techLevel>
+    </thingDef>
+
+    <!-- ============================Walking Cane================================== -->
+      <thingDef ParentName="BaseTool_Crafted">
+        <defName>Tool_Walking_Cane</defName>
+        <label>walking cane</label>
+        <description>Move Speed +15%\n\nA handy, familiar walking cane to help you cross terrain swiftly.</description>
+        <graphicData>
+          <texPath>Tools/Walking_Cane</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>15</costStuffCount>
+        <stuffCategories>
+          <li>Metallic</li>
+          <li>Woody</li>
+          <li>Stony</li>
+        </stuffCategories>
+        <statBases>
+          <WorkToMake>5000</WorkToMake>
+          <Mass>2</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <MoveSpeed>0.15</MoveSpeed>
+        </equippedStatOffsets>
+        <tools>
+          <li>
+            <label>stick</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0.5</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Whip================================== -->
+      <thingDef ParentName="BaseTool_Crafted">
+        <defName>Tool_Whip</defName>
+        <label>whip</label>
+        <description>Animal Tame Chance +15%\nPrisoner Recruit Chance +10%\n\nA strong, flexible cord designed for stinging and restricting. Makes you feel like a movie star.</description>
+        <graphicData>
+          <texPath>Tools/Whip</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+          <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+          <WorkToMake>6000</WorkToMake>
+          <Mass>1.5</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <TameAnimalChance>0.15</TameAnimalChance>
+          <RecruitPrisonerChance>0.1</RecruitPrisonerChance>
+        </equippedStatOffsets>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0.5</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================First Aid Kit================================== -->
+      <thingDef ParentName="BaseTool_Crafted">
+        <defName>Tool_First_Aid_Kit</defName>
+        <label>first aid kit</label>
+        <description>Immunity Gain Speed +5%\nMedical Tend Quality +15%\nTend Speed +75%\n\nBeing prepared and well stocked is the best way to survive. A First Aid Kit and some medicine will take you a long way and save lives with the swiftness of treatment.</description>
+        <graphicData>
+          <texPath>Tools/First_Aid_Kit</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costList>
+          <Cloth>60</Cloth>
+          <Medicine>2</Medicine>
+        </costList>
+        <statBases>
+          <WorkToMake>12000</WorkToMake>
+          <Mass>3</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
+          <MedicalTendQuality>0.15</MedicalTendQuality>
+          <MedicalTendSpeed>0.75</MedicalTendSpeed>
+        </equippedStatOffsets>
+        <techLevel>Industrial</techLevel>
+        <recipeMaker>
+          <researchPrerequisite>DrugProduction</researchPrerequisite>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>cover</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0.5</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Flowers================================== -->
+      <thingDef ParentName="BaseTool_Crafted">
+        <defName>Tool_Flowers</defName>
+        <label>flowers</label>
+        <description>Social Impact +25%\nGift Impact +10%\n\nA bunch of preserved flowers to make someone smile.</description>
+        <graphicData>
+          <texPath>Tools/Flowers</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+          <li>Fabric</li>
+          <li>Woody</li>
+        </stuffCategories>
+        <statBases>
+          <WorkToMake>15000</WorkToMake>
+          <Mass>0.5</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <SocialImpact>0.25</SocialImpact>
+          <GiftImpact>0.1</GiftImpact>
+        </equippedStatOffsets>
+        <tools>
+          <li>
+            <label>bouquet</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Fan================================== -->
+      <thingDef ParentName="BaseTool_Crafted">
+        <defName>Tool_Fan</defName>
+        <label>fan</label>
+        <description>Temperature Max +15F\n\nKeep cool and look cool doing it.</description>
+        <graphicData>
+          <texPath>Tools/Fan</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+          <li>Fabric</li>
+          <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+          <WorkToMake>1000</WorkToMake>
+          <Mass>0.2</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <ComfyTemperatureMax>15</ComfyTemperatureMax>
+          <Insulation_Heat>20</Insulation_Heat>
+        </equippedStatOffsets>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0.5</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Encyclopedia================================== -->
+      <thingDef ParentName="BaseTool">
+        <defName>Tool_Encyclopedia</defName>
+        <label>encyclopedia</label>
+        <description>Research Speed Factor +25%\n\nA useful compilation of many facts, technologies, and histories. No need to reinvent the wheel, one of these will help speed up your research.</description>
+        <graphicData>
+          <texPath>Tools/Encyclopedia</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <Mass>1.2</Mass>
+          <MarketValue>400</MarketValue>
+        </statBases>
+        <equippedStatOffsets>
+          <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+        </equippedStatOffsets>
+        <techLevel>Industrial</techLevel>
+        <tools>
+          <li>
+            <label>cover</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>1</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================How To================================== -->
+      <thingDef ParentName="BaseTool">
+        <defName>Tool_How_To</defName>
+        <label>how-to for dummies</label>
+        <description>Global Learning Speed +25%\n\nA useful book for teaching your pawns a little more skills.</description>
+        <graphicData>
+          <texPath>Tools/How_To</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <Mass>0.8</Mass>
+          <MarketValue>600</MarketValue>
+        </statBases>
+        <equippedStatOffsets>
+          <GlobalLearningFactor>0.25</GlobalLearningFactor>
+        </equippedStatOffsets>
+        <techLevel>Industrial</techLevel>
+        <tools>
+          <li>
+            <label>cover</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>1</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Coupon Book================================== -->
+      <thingDef ParentName="BaseTool">
+        <defName>Tool_Coupon_Book</defName>
+        <label>coupon book</label>
+        <description>Trade Price Improvement +25%\n\nSave hundreds of dollars on sales, deals and more with this limited time offer. Only valid at participating traders.</description>
+        <graphicData>
+          <texPath>Tools/Coupon_Book</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <Mass>0.8</Mass>
+          <MarketValue>500</MarketValue>
+        </statBases>
+        <equippedStatOffsets>
+          <TradePriceImprovement>0.25</TradePriceImprovement>
+        </equippedStatOffsets>
+        <techLevel>Industrial</techLevel>
+        <tools>
+          <li>
+            <label>cover</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+</Defs>

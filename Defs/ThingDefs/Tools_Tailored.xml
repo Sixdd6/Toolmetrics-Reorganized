@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Tailored -->
+    <thingDef Name="BaseTool_Tailored" ParentName="BaseTool" Abstract="True">
+      <recipeMaker>
+        <workSpeedStat>TailoringSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+        </recipeUsers>
+        <stuffCategories>
+          <li>Fabric</li>
+          <li>Leathery</li>
+        </stuffCategories>
+        <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      </recipeMaker>
+      <techLevel>Medieval</techLevel>
+      </thingDef>
+
+  <!-- ============================Leash================================== -->
+    <thingDef ParentName="BaseTool_Tailored">
+      <defName>Tool_Leash</defName>
+      <label>leash</label>
+      <description>Animal Tame Chance +5%\nAnimal Train Chance +10%\n\nKeep those pets in hand, and take those reluctant animals back to the camp with this handy tool.</description>
+      <graphicData>
+        <texPath>Tools/Leash</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <costStuffCount>10</costStuffCount>
+      <statBases>
+        <WorkToMake>1000</WorkToMake>
+        <Mass>0.1</Mass>
+        <Weapon_Bulk>0.2</Weapon_Bulk>
+      </statBases>
+      <tools>
+        <li>
+          <label>fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.0</cooldownTime>
+        </li>
+      </tools>
+      <equippedStatOffsets>
+        <TameAnimalChance>0.05</TameAnimalChance>
+        <TrainAnimalChance>0.1</TrainAnimalChance>
+      </equippedStatOffsets>
+    </thingDef>
+
+  <!-- ============================Bandage================================== -->
+    <thingDef ParentName="BaseTool_Tailored">
+      <defName>Tool_Bandage</defName>
+      <label>bandage</label>
+      <description>Medical Potency +10%\nTend Speed +30%\n\nClean sterile cloth, rolled and ready to stop your pawns from bleeding out on the floor.</description>
+      <graphicData>
+        <texPath>Tools/Bandage</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <costStuffCount>15</costStuffCount>
+      <statBases>
+        <WorkToMake>200</WorkToMake>
+        <Mass>0.1</Mass>
+        <Weapon_Bulk>0.2</Weapon_Bulk>
+      </statBases>
+      <tools>
+        <li>
+          <label>fist</label>
+          <capacities>
+            <li>Blunt</li>
+          </capacities>
+          <power>1</power>
+          <cooldownTime>1.0</cooldownTime>
+        </li>
+      </tools>
+      <equippedStatOffsets>
+        <MedicalPotency>0.1</MedicalPotency>
+        <MedicalTendSpeed>0.3</MedicalTendSpeed>
+      </equippedStatOffsets>
+    </thingDef>
+
+</Defs>

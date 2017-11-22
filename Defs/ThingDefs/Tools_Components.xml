@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Components -->
+    <thingDef Name="BaseTool_Components" ParentName="BaseTool" Abstract="True">
+      <recipeMaker>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <recipeUsers>
+          <li>ComponentAssemblyBench</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      </recipeMaker>
+      <techLevel>Spacer</techLevel>
+    </thingDef>
+
+    <!-- ============================Laptop================================== -->
+      <thingDef ParentName="BaseTool_Components">
+        <defName>Tool_Laptop</defName>
+        <label>laptop</label>
+        <description>Research Speed +50%\nGlobal Learning Speed +5%\n\nComes complete with satellite hookup to the universal answer web, Ding.</description>
+        <graphicData>
+          <texPath>Tools/Laptop</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>20000</WorkToMake>
+          <Mass>3</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <ResearchSpeedFactor>0.5</ResearchSpeedFactor>
+          <GlobalLearningFactor>0.05</GlobalLearningFactor>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+          <costList>
+            <Steel>50</Steel>
+            <Plasteel>50</Plasteel>
+            <Gold>25</Gold>
+            <Component>20</Component>
+          </costList>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>case</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>2</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+    <!-- ============================Smartphone================================== -->
+      <thingDef ParentName="BaseTool_Components">
+        <defName>Tool_Smartphone</defName>
+        <label>smartphone</label>
+        <description>Global Work Speed -50%\nGlobal Learning Speed +75%\n\nSmartphones are cheap, portable, and widely available, but your pawns might have problems getting distracted.</description>
+        <graphicData>
+          <texPath>Tools/Smartphone</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+          <WorkToMake>25000</WorkToMake>
+          <Mass>0.2</Mass>
+        </statBases>
+        <equippedStatOffsets>
+          <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+          <GlobalLearningFactor>0.75</GlobalLearningFactor>
+        </equippedStatOffsets>
+        <recipeMaker>
+          <costList>
+            <Plasteel>20</Plasteel>
+            <Gold>50</Gold>
+            <Component>15</Component>
+          </costList>
+          <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+        </recipeMaker>
+        <tools>
+          <li>
+            <label>case</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>0</power>
+            <cooldownTime>4</cooldownTime>
+          </li>
+        </tools>
+      </thingDef>
+
+</Defs>
