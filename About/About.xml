@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>Toolmetrics: Reorganized</name>
+
+    <author>Chronometrics, Sixdd</author>
+
+    <url></url>
+
+    <targetVersion>0.18.1722</targetVersion>
+
+    <description>
+~= Work Tools for Pawns =~
+     -REORGANIZED-
+
+Original Mod Licence:
+"Assets created by me, definitely, 100%, why would I lie here."
+
+Major Changes
+  • Removed some duplicate-functioning tools (spoons for example)
+  • Removed backpacks and dufflebags (other mods handle these better, who carries a backpack in their hands anyway?)
+  • Added stats to the descriptions of every tool
+
+Credits:
+Chronometrics: Original mod author
+Sixdd: Tweaked and updated to B18
+
+</description>
+
+</ModMetaData>
