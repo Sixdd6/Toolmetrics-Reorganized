@@ -32,14 +32,14 @@
           <ResearchSpeedFactor>0.5</ResearchSpeedFactor>
           <GlobalLearningFactor>0.05</GlobalLearningFactor>
         </equippedStatOffsets>
+        <costList>
+          <Steel>50</Steel>
+          <Plasteel>50</Plasteel>
+          <Gold>25</Gold>
+          <Component>20</Component>
+        </costList>
         <recipeMaker>
           <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
-          <costList>
-            <Steel>50</Steel>
-            <Plasteel>50</Plasteel>
-            <Gold>25</Gold>
-            <Component>20</Component>
-          </costList>
         </recipeMaker>
         <tools>
           <li>
@@ -70,12 +70,12 @@
           <WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
           <GlobalLearningFactor>0.75</GlobalLearningFactor>
         </equippedStatOffsets>
+        <costList>
+          <Plasteel>20</Plasteel>
+          <Gold>50</Gold>
+          <Component>15</Component>
+        </costList>
         <recipeMaker>
-          <costList>
-            <Plasteel>20</Plasteel>
-            <Gold>50</Gold>
-            <Component>15</Component>
-          </costList>
           <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
         </recipeMaker>
         <tools>

@@ -86,7 +86,7 @@
       <thingDef ParentName="BaseTool_Crafted">
         <defName>Tool_First_Aid_Kit</defName>
         <label>first aid kit</label>
-        <description>Immunity Gain Speed +5%\nMedical Tend Quality +15%\nTend Speed +75%\n\nBeing prepared and well stocked is the best way to survive. A First Aid Kit and some medicine will take you a long way and save lives with the swiftness of treatment.</description>
+        <description>Medical Tend Quality +15%\nMedical Tend Speed +75%\n\nBeing prepared and well stocked is the best way to survive. A First Aid Kit and some medicine will take you a long way and save lives with the swiftness of treatment.</description>
         <graphicData>
           <texPath>Tools/First_Aid_Kit</texPath>
           <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,6 @@
           <Mass>3</Mass>
         </statBases>
         <equippedStatOffsets>
-          <ImmunityGainSpeed>0.05</ImmunityGainSpeed>
           <MedicalTendQuality>0.15</MedicalTendQuality>
           <MedicalTendSpeed>0.75</MedicalTendSpeed>
         </equippedStatOffsets>
@@ -124,7 +123,7 @@
       <thingDef ParentName="BaseTool_Crafted">
         <defName>Tool_Flowers</defName>
         <label>flowers</label>
-        <description>Social Impact +25%\nGift Impact +10%\n\nA bunch of preserved flowers to make someone smile.</description>
+        <description>Social Impact +25%\nBeauty +10%\n\nA bunch of preserved flowers to make someone smile.</description>
         <graphicData>
           <texPath>Tools/Flowers</texPath>
           <graphicClass>Graphic_Single</graphicClass>
@@ -140,7 +139,7 @@
         </statBases>
         <equippedStatOffsets>
           <SocialImpact>0.25</SocialImpact>
-          <GiftImpact>0.1</GiftImpact>
+          <Beauty>0.1</Beauty>
         </equippedStatOffsets>
         <tools>
           <li>
@@ -192,7 +191,7 @@
       <thingDef ParentName="BaseTool">
         <defName>Tool_Encyclopedia</defName>
         <label>encyclopedia</label>
-        <description>Research Speed Factor +25%\n\nA useful compilation of many facts, technologies, and histories. No need to reinvent the wheel, one of these will help speed up your research.</description>
+        <description>Research Speed +25%\n\nA useful compilation of many facts, technologies, and histories. No need to reinvent the wheel, one of these will help speed up your research.</description>
         <graphicData>
           <texPath>Tools/Encyclopedia</texPath>
           <graphicClass>Graphic_Single</graphicClass>

@@ -47,12 +47,10 @@
           <ConstructionSpeed>0.2</ConstructionSpeed>
           <PlantHarvestYield>-1</PlantHarvestYield>
         </equippedStatOffsets>
-        <recipeMaker>
-          <costStuffCount>60</costStuffCount>
-          <costList>
-            <Component>2</Component>
-          </costList>
-        </recipeMaker>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+          <Component>2</Component>
+        </costList>
         <tools>
           <li>
             <label>handle</label>
@@ -74,7 +72,7 @@
       </thingDef>
 
     <!-- ============================Brick Saw================================== -->
-      <thingDef ParentName="BaseTool_Machined">
+      <!-- <thingDef ParentName="BaseTool_Machined">
         <defName>Tool_Brick_Saw</defName>
         <label>brick saw</label>
         <description>Stonecutting Speed +50%\n\nWhy chisel away slowly when you can slice and dice your way to perfect stone tiles?</description>
@@ -89,12 +87,10 @@
         <equippedStatOffsets>
           <StonecuttingSpeed>0.5</StonecuttingSpeed>
         </equippedStatOffsets>
-        <recipeMaker>
-          <costStuffCount>60</costStuffCount>
-          <costList>
-            <Component>2</Component>
-          </costList>
-        </recipeMaker>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+          <Component>2</Component>
+        </costList>
         <tools>
           <li>
             <label>handle</label>
@@ -113,7 +109,7 @@
             <cooldownTime>4.4</cooldownTime>
           </li>
         </tools>
-      </thingDef>
+      </thingDef> -->
 
     <!-- ============================Power Drill================================== -->
       <thingDef ParentName="BaseTool_Machined">
@@ -132,12 +128,10 @@
           <ConstructionSpeed>0.5</ConstructionSpeed>
           <ConstructSuccessChance>0.1</ConstructSuccessChance>
         </equippedStatOffsets>
-        <recipeMaker>
-          <costStuffCount>60</costStuffCount>
-          <costList>
-            <Component>2</Component>
-          </costList>
-        </recipeMaker>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+          <Component>2</Component>
+        </costList>
         <tools>
           <li>
             <label>handle</label>
@@ -170,18 +164,14 @@
         <statBases>
           <WorkToMake>20000</WorkToMake>
           <Mass>20</Mass>
-          <MeleeWeapon_DamageAmount>26</MeleeWeapon_DamageAmount>
-          <MeleeWeapon_Cooldown>4.8</MeleeWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
           <MiningSpeed>0.5</MiningSpeed>
         </equippedStatOffsets>
-        <recipeMaker>
-          <costStuffCount>100</costStuffCount>
-          <costList>
-            <Component>1</Component>
-          </costList>
-        </recipeMaker>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+          <Component>1</Component>
+        </costList>
         <tools>
           <li>
             <label>handle</label>

@@ -12,44 +12,31 @@
         <li>FueledSmithy</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-      <defaultIngredientFilter>
-        <categories>
-          <li>Root</li>
-        </categories>
-        <exceptedThingDefs>
-          <li>Silver</li>
-          <li>Gold</li>
-        </exceptedThingDefs>
-      </defaultIngredientFilter>
     </recipeMaker>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <techLevel>Medieval</techLevel>
   </thingDef>
 
   <thingDef Name="BaseTool_Forged_Blunt" ParentName="BaseTool_Forged" Abstract="True">
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
     <recipeMaker>
-      <stuffCategories>
-        <li>Metallic</li>
-        <li>Woody</li>
-        <li>Stony</li>
-      </stuffCategories>
       <defaultIngredientFilter>
         <categories>
           <li>Root</li>
         </categories>
-        <exceptedThingDefs>
-          <li>Silver</li>
-          <li>Gold</li>
-        </exceptedThingDefs>
       </defaultIngredientFilter>
   </thingDef>
 
   <thingDef Name="BaseTool_Forged_Sharp" ParentName="BaseTool_Forged" Abstract="True">
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+    </stuffCategories>
     <recipeMaker>
-      <stuffCategories>
-        <li>Metallic</li>
-        <li>Stony</li>
-      </stuffCategories>
       <defaultIngredientFilter>
         <categories>
           <li>Root</li>

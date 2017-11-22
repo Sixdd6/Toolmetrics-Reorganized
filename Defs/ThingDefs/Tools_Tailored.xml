@@ -8,14 +8,14 @@
         <workSkill>Crafting</workSkill>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
-        <recipeUsers>
-          <li>ElectricTailoringBench</li>
-          <li>HandTailoringBench</li>
-        </recipeUsers>
         <stuffCategories>
           <li>Fabric</li>
           <li>Leathery</li>
         </stuffCategories>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+          <li>HandTailoringBench</li>
+        </recipeUsers>
         <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
       </recipeMaker>
       <techLevel>Medieval</techLevel>
