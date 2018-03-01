@@ -2,13 +2,9 @@
 <ModMetaData>
 
     <name>Toolmetrics: Reorganized</name>
-
     <author>Chronometrics, Sixdd</author>
-
     <url></url>
-
     <targetVersion>0.18.1722</targetVersion>
-
     <description>
 ~= Work Tools for Pawns =~
      -REORGANIZED-
@@ -26,5 +22,4 @@ Chronometrics: Original mod author
 Sixdd: Tweaked and updated to B18
 
 </description>
-
 </ModMetaData>

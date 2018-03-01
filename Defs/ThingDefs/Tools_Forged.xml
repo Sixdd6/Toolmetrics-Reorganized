@@ -29,6 +29,10 @@
           <li>Root</li>
         </categories>
       </defaultIngredientFilter>
+    </recipeMaker>
+    <weaponTags>
+      <li>NonNeolithicOnlySimpleMelee</li>
+    </weaponTags>
   </thingDef>
 
   <thingDef Name="BaseTool_Forged_Sharp" ParentName="BaseTool_Forged" Abstract="True">
@@ -47,6 +51,9 @@
         </exceptedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
+    <weaponTags>
+      <li>NonNeolithicOnlySimpleMelee</li>
+    </weaponTags>
   </thingDef>
 
   <!-- Forged -->
@@ -66,16 +73,14 @@
       <equippedStatOffsets>
         <WorkSpeedGlobal>0.2</WorkSpeedGlobal>
       </equippedStatOffsets>
-      <recipeMaker>
-        <costList>
-          <Steel>20</Steel>
-          <Tool_Saw>1</Tool_Saw>
-          <Tool_Hammer>1</Tool_Hammer>
-          <Tool_Pickaxe>1</Tool_Pickaxe>
-          <Tool_Shovel>1</Tool_Shovel>
-          <Tool_Trowel>1</Tool_Trowel>
-        </costList>
-      </recipeMaker>
+      <costList>
+        <Steel>20</Steel>
+        <Tool_Axe>1</Tool_Axe>
+        <Tool_Hammer>1</Tool_Hammer>
+        <Tool_Pickaxe>1</Tool_Pickaxe>
+        <Tool_Shovel>1</Tool_Shovel>
+        <Tool_Trowel>1</Tool_Trowel>
+      </costList>
       <tools>
         <li>
           <label>case</label>
@@ -146,8 +151,9 @@
       </tools>
     </thingDef>
 
+  <!-- Forged Sharp -->
     <!-- ============================Screwdriver================================== -->
-    <thingDef ParentName="BaseTool_Forged">
+    <thingDef ParentName="BaseTool_Forged_Sharp">
       <defName>Tool_Screwdriver</defName>
       <label>screwdriver</label>
       <description>Construction Success Chance +100%\nRepair Success Chance +100%\n\nGreatly improves the sturdiness and ease of constructing.</description>
@@ -176,7 +182,6 @@
       </tools>
     </thingDef>
 
-  <!-- Forged Sharp -->
     <!-- ============================Axe================================== -->
     <thingDef ParentName="BaseTool_Forged_Sharp">
       <defName>Tool_Axe</defName>
@@ -222,7 +227,7 @@
         <Mass>0.8</Mass>
       </statBases>
       <equippedStatOffsets>
-        <StonecuttingSpeed>0.25</StonecuttingSpeed>
+        <!-- <StonecuttingSpeed>0.25</StonecuttingSpeed> -->
         <SculptingSpeed>0.25</SculptingSpeed>
       </equippedStatOffsets>
       <tools>

@@ -3,6 +3,9 @@
 
   <!-- Machined -->
     <thingDef Name="BaseTool_Machined" ParentName="BaseTool" Abstract="True">
+      <stuffCategories>
+        <li>Metallic</li>
+      </stuffCategories>
       <recipeMaker>
         <workSpeedStat>SmithingSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
@@ -11,9 +14,6 @@
         <recipeUsers>
           <li>TableMachining</li>
         </recipeUsers>
-        <stuffCategories>
-          <li>Metallic</li>
-        </stuffCategories>
         <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         <defaultIngredientFilter>
           <categories>
@@ -27,6 +27,9 @@
       </recipeMaker>
       <equippedAngleOffset>-65</equippedAngleOffset>
       <techLevel>Industrial</techLevel>
+      <weaponTags>
+        <li>NonNeolithicOnlyMelee</li>
+      </weaponTags>
     </thingDef>
 
     <!-- ============================Skill Saw================================== -->

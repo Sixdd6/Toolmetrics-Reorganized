@@ -4,6 +4,6 @@
   <thingCategoryDef>
     <defName>Tools</defName>
     <label>tools</label>
-    <parent>Weapons</parent>
+    <parent>Root</parent>
   </thingCategoryDef>
 </Defs>

@@ -13,6 +13,9 @@
         <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
       </recipeMaker>
       <techLevel>Neolithic</techLevel>
+      <weaponTags>
+        <li>NeolithicMeleeBasic</li>
+      </weaponTags>
     </thingDef>
 
     <!-- ============================Walking Cane================================== -->

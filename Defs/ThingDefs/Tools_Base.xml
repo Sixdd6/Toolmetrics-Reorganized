@@ -23,10 +23,6 @@
     <tickerType>Never</tickerType>
     <canBeSpawningInventory>true</canBeSpawningInventory>
     <tradeability>Sellable</tradeability>
-    <weaponTags>
-      <li>Melee</li>
-      <li>Tool</li>
-    </weaponTags>
     <thingCategories>
       <li>Tools</li>
     </thingCategories>

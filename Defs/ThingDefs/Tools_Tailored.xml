@@ -3,15 +3,15 @@
 
   <!-- Tailored -->
     <thingDef Name="BaseTool_Tailored" ParentName="BaseTool" Abstract="True">
+      <stuffCategories>
+        <li>Fabric</li>
+        <li>Leathery</li>
+      </stuffCategories>
       <recipeMaker>
         <workSpeedStat>TailoringSpeed</workSpeedStat>
         <workSkill>Crafting</workSkill>
         <effectWorking>Tailor</effectWorking>
         <soundWorking>Recipe_Tailor</soundWorking>
-        <stuffCategories>
-          <li>Fabric</li>
-          <li>Leathery</li>
-        </stuffCategories>
         <recipeUsers>
           <li>ElectricTailoringBench</li>
           <li>HandTailoringBench</li>
